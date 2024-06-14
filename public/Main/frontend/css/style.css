@@ -1,0 +1,1310 @@
+@font-face{
+    font-family:Roboto-Bold;
+    src: url('fonts/Roboto-Bold.ttf') format('truetype');
+}
+@font-face{
+    font-family:Roboto;
+    src: url('fonts/Roboto.ttf') format('truetype');
+}
+
+:root{
+    --bs-green:#18a166;
+    --bs-black:#0d0d0d;
+    --bs-grey:#808080;
+    --bs-light-purple:#9097b9;
+    --bs-light-gold:#d1aa67;
+    --bs-dark-grey:#616161;
+    --bs-pink:#c42ea4;
+    --bs-offwhite:#D6D6D6;
+    --bs-about-signup:#f4f2f0;
+    --bs-red:#ff0000;
+    --bs-white:#ffffff;
+
+}
+
+
+.sidenav{
+width: 130px;
+position: fixed;
+z-index: 1;
+top: 30%;
+right: 0px;
+background:var(--bs-green);
+overflow-x: hidden;
+padding: 8px 0;
+border-top-left-radius: 10px;
+border-bottom-left-radius: 60px;
+}
+/* Header Style */
+.header-top{
+    background-image: url(../images/bg_header_1.jpg);
+}
+.border-header{
+    border-bottom: 0.5px solid black;
+    width: 100%;
+}
+.header-top .future-text h3{
+font-family: Roboto;
+color:var(--bs-grey);
+}
+.header-top-info ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+
+}
+.header-top-info ul li{
+    list-style-type: none;
+    color:var(--bs-light-purple);
+    font-size: 16px;
+    font-family:Roboto-Bold;
+}
+
+.header-top .footer-social
+{
+text-align: left;
+text-decoration: none;
+list-style-type: none;
+
+}
+.header-top .footer-social ul li{
+    list-style-type: none;
+    font-family: Roboto-Bold;
+}
+.header-top .footer-social ul li:hover{
+  display: block;
+}
+
+.header-top .footer-social ul li a{
+    color: var(--bs-light-purple);
+    text-decoration: none;
+    font-family: Helvetica-Bold;
+
+}
+.header-top .ucs-logo{
+    width: 100px;
+}
+.sticky-wrapper {
+    background-color: var(--bs-green);
+    border-bottom: 0.5px solid #d1aa67;
+}
+.sticky-wrapper .navbar .navbar-nav li a {
+    color: var(--bs-white);
+    font-family: Roboto-Bold;
+    font-size: 1.25rem;
+}
+.sticky-wrapper .navbar .navbar-nav li a:hover{
+    color: var(--bs-light-gold);
+    transform: scale(1.1);
+}
+.sticky-wrapper .navbar .navbar-nav .dropdown .dropdown-menu li a{
+    color: var(--bs-white);
+    font-family: Roboto-Bold;
+}
+.sticky-wrapper .navbar .navbar-nav .dropdown .dropdown-menu li a:hover{
+    color: var(--bs-green);
+    background-color: var(--bs-white);
+}
+.sticky-wrapper .navbar .navbar-nav .dropdown .dropdown-menu li .enroll::before ,
+.sticky-wrapper .navbar .navbar-nav .dropdown .dropdown-menu li .news::before
+{
+content:"|";
+margin-right: 10px;
+}
+.sticky-wrapper .navbar .navbar-nav .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+ }
+
+.sticky-wrapper .navbar .navbar-nav .dropdown .dropdown-menu-show {
+    display: flex;
+    flex-wrap: wrap;
+    border: 0;
+    padding: 0.5rem;
+    border-radius: 0;
+    background-color: var(--bs-dark-grey);
+    min-width: 25rem;
+    left: -5rem;
+    top: 65px;
+}
+.ucs-main-banner-text li{
+    font-family: Roboto;
+    color: var(--bs-white);
+    font-size: 1.25rem;
+}
+
+
+.sticky-wrapper .navbar .navbar-nav .dropdown .dropdown-menu{
+columns: 2;
+background-color: var(--bs-green);
+}
+.overlay-ucs {
+    position: relative;
+    width:100%
+}
+.ucs-upper-image img {
+    width: 100%;
+    height: 550px;
+}
+.overlay-ucs{
+    background: var(--bs-green);
+    overflow: hidden;
+}
+.overlay-ucs .ucs-upper-image img{
+    object-fit: cover;
+    opacity: 0.4;
+}
+.overlay-ucs .cambridge-portion {
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    transform: translate(-30%, -40%);
+    z-index: 1;
+}
+.overlay-ucs .cambridge-portion .new{
+    font-family: Roboto-Bold;
+    /* font-weight:bold; */
+    color: var(--bs-light-gold);
+}
+.overlay-ucs .cambridge-portion .prog{
+    font-family: Roboto-Bold;
+    /* font-weight:bold; */
+    color: var(--bs-white);
+}
+.overlay-ucs .cambridge-portion .senior{
+    font-family: Roboto-Bold;
+    /* font-weight:bold; */
+    color: var(--bs-light-gold);
+}
+.overlay-ucs .cambridge-portion p{
+    font-family: Roboto;
+    color: var(--bs-white);
+    font-size: 1.25rem;
+}
+.overlay-ucs .cambridge-portion button{
+    font-family: Roboto-Bold;
+    /* font-weight:bold; */
+    background-color: var(--bs-pink);
+    color:var(--bs-white);
+    box-shadow: none;
+    border: transparent;
+}
+.overlay-ucs .girl-image {
+    position: absolute;
+    bottom: 0;
+    left: 40%;
+    transform: translate(-30%,0%);
+    z-index: 2;
+}
+
+
+/*Footer style*/
+.footer-area{
+    background: #18a166 url(../images/veins.png) repeat center top;
+}
+.footer-area .footer-widget-container .single-footer-widget h4{
+    color: var(--bs-white);
+    font-family: Roboto-Bold;
+}
+.footer-area .footer-widget-container .single-footer-widget .footer-widget-list{
+    list-style-type: none;
+}
+.footer-area .footer-widget-container .single-footer-widget .footer-widget-list li  img{
+    width: 170px;
+}
+.footer-area .footer-widget-container .single-footer-widget .footer-widget-list-location li a img{
+    width: 100%;
+
+}
+.footer-area .footer-widget-container .single-footer-widget .footer-widget-list-location li {
+    list-style-type: none;
+}
+.footer-area .footer-widget-container .single-footer-widget .footer-widget-list li a {
+    color: var(--bs-white);
+    text-decoration: none;
+    font-family: Roboto-Bold;
+    font-size: 1.25rem;
+}
+.footer-area .footer-widget-container .single-footer-widget .footer-widget-list li p{
+    color: var(--bs-black);
+    font-family: Roboto;
+    font-size: 1.25rem;
+}
+.footer-area .footer-container{
+    border-top:0.5px solid white ;
+}
+.footer-area .footer-container span{
+    color: var(--bs-white);
+   font-family: Roboto;
+}
+.footer-area .footer-container span a{
+    color: var(--bs-black);
+    font-family: Roboto;
+}
+.footer-area .footer-container .social-links a i{
+    color: var(--bs-white);
+    font-size: 1.0rem;
+    background-color:var(--bs-pink);
+}
+/* Home Page Style */
+.home-wrapper .text-cambridge h3{
+    font-family: Roboto-Bold;
+    /* font-weight: bold; */
+    color: var(--bs-green);
+}
+.home-wrapper .text-cambridge p{
+    font-family: Roboto;
+    font-size: 1.25rem;
+}
+.home-wrapper .endorse h1{
+    font-family: Roboto-Bold;
+    /* font-weight: bold; */
+    color: var(--bs-green);
+}
+.home-wrapper .truely-text span{
+    font-family: Roboto-Bold;
+}
+.home-wrapper .modern-text h5{
+    font-family: Roboto-Bold;
+    /* font-weight: bold; */
+    color: var(--bs-green);
+}
+.home-wrapper .modern-text p{
+    font-family: Roboto;
+    font-size: 1.25rem;
+}
+.home-wrapper .two-logo img{
+    width: 220px;
+    object-fit: contain;
+}
+.home-wrapper .building-flex {
+    position: relative;
+    width: 100%;
+}
+.home-wrapper .group-image {
+    position: absolute;
+    top: 90px;
+    left: -25px;
+    transform: translate(40px,-30px);
+}
+.home-wrapper .text-cambridge p{
+ text-align: justify;
+}
+.home-wrapper .video-section iframe{
+    width: 100%;
+    height:315px;
+}
+
+
+.home-wrapper .truely-text h5 {
+    position: relative;
+    z-index: 1;
+}
+.home-wrapper .truely-text h5:before {
+    border-top: 2px solid --bs-green;
+    content:"";
+    margin: 0 auto; /* this centers the line to the full width specified */
+    position: absolute; /* positioning must be absolute here, and relative positioning must be applied to the parent */
+    top: 50%; left: 0; right: 0; bottom: 0;
+    width: 95%;
+    z-index: -1;
+}
+
+.home-wrapper .truely-text h1 span {
+    /* to hide the lines from behind the text, you have to set the background color the same as the container */
+    background: var(--bs-white);
+    padding: 0 15px; color: var(--bs-green);
+    font-family: Roboto-Bold;
+    /* font-weight: bold; */
+
+
+}
+.home-wrapper .abc-work .card .image-one img{
+    background: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)),
+}
+.home-wrapper .abc-work .card h6{
+    font-family: Roboto-Bold;
+}
+.home-wrapper .abc-work .card {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.home-wrapper .abc-work .card .image img ,
+.home-wrapper .abc-work .card .image-one img{
+    height: 400px;
+    object-fit: cover;
+}
+.home-wrapper .abc-work .turn{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: var(--bs-green);
+}
+.home-wrapper .abc-work .item:hover .turn{
+    opacity: 1;
+    color: var(--bs-white);
+    font-size: 1.25;
+    font-family: Roboto-Bold;
+  }
+.home-wrapper .abc-work .item:hover .turn.text {
+    color: var(--bs-white);
+    font-size: 1.25;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+
+
+.home-wrapper .latest-news h5{
+    font-family: Roboto-Bold;
+    /* font-weight: bold; */
+    color: var(--bs-green);
+}
+.home-wrapper .latest-news .latest-news-cards .card .image-one img ,
+.home-wrapper .latest-news .latest-news-cards .card .image-two img ,
+.home-wrapper .latest-news .latest-news-cards .card .image-three img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.home-wrapper .latest-news .latest-news-cards .card button {
+    font-family: Roboto-Bold;
+    /* font-weight: bold; */
+    color: var(--bs-green);
+}
+.home-wrapper .latest-news .latest-news-cards .card h4 {
+    font-family: Roboto-Bold;
+    /* font-weight: bold; */
+    color: var(--bs-green);
+}
+.home-wrapper .latest-news .latest-news-cards .card h6{
+    font-family: Roboto-Bold;
+}
+/* Counter */
+.home-wrapper .chemical-counter {
+    position: relative;
+    width: 100%;
+    background-image: url(../images/chemicals.png);
+}
+.home-wrapper .latest-news .latest-news-cards .card .card-body .card-text{
+    text-decoration: none!important;
+    color: black;
+    font-family: Roboto;
+    font-size: 1.25rem;
+}
+.home-wrapper .latest-news .latest-news-cards .card .card-body .card-text:hover{
+    color:var(--bs-green);
+}
+.home-wrapper .latest-news .latest-news-cards  .news-button .tuf-tab-bg{
+    background-color: var(--bs-green);
+    color: var(--bs-white);
+    font-family: Roboto-Bold;
+}
+.home-wrapper .latest-news .latest-news-cards  .owl-carousel .item .card img{
+    height: 250px;
+    width: 100%;
+    /* object-fit: contain; */
+}
+.home-wrapper .latest-news .latest-news-cards  .owl-carousel .item .card {
+    height: 400px;
+    border: 1px solid #18a166;
+}
+
+.home-wrapper .latest-news .latest-news-cards .owl-carousel .item a{
+    text-decoration: none!important;
+    font-family: Roboto-Bold;
+}
+/* .home-wrapper .chemical-counter .chemical-text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+} */
+
+/* .home-wrapper .chemical-counter {
+    background-color: #18a166;
+    background-image: url("/public/Main/frontend/images/chemicals.png");
+    background-repeat: no-repeat, repeat;
+
+} */
+.home-wrapper .chemical-counter .chemical-text .ucs-counter img{
+    width: 100px;
+}
+.home-wrapper .chemical-counter .chemical-text .ucs-counter .counter-num ,
+.home-wrapper .chemical-counter .chemical-text .ucs-counter .counter-num-one ,
+.home-wrapper .chemical-counter .chemical-text .ucs-counter .counter-num-two ,
+.home-wrapper .chemical-counter .chemical-text .ucs-counter .counter-text
+{
+   color: var(--bs-white);
+   font-size: 1.25rem;
+   font-family: Roboto;
+}
+.home-wrapper .chemical-counter .chemical-text .ucs-counter .counter-num-one::after ,
+.home-wrapper .chemical-counter .chemical-text .ucs-counter .counter-num-two::after{
+    content: '%';
+}
+.home-wrapper .regonize-section h3{
+    /* font-size: 2.25rem; */
+    font-family: Roboto-Bold;
+    /* font-weight: bold; */
+    color: var(--bs-green);
+}
+.home-wrapper .regonize-section p{
+    font-size: 1.25rem;
+    font-family: Roboto;
+}
+.home-wrapper .international-school h3{
+    /* font-size: 2.25rem; */
+    font-family: Roboto-Bold;
+    /* font-weight: bold; */
+    color: var(--bs-green);
+}
+.home-wrapper .international-school .card .avatar{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--bs-green);
+    position: relative;
+    left:40%;
+}
+.home-wrapper .international-school .card h6 {
+    text-align: center;
+    font-family: Roboto-Bold;
+    /* font-weight: bold; */
+    font-size: 1.25rem;
+    color: var(--bs-green);
+}
+.home-wrapper .international-school .card p{
+    text-align: center;
+    font-family: Roboto;
+    font-size: 1.25rem;
+}
+.home-wrapper .international-school .card:hover{
+    transform:scale(1.1);
+}
+.home-wrapper .international-school .owl-theme .owl-dots .owl-dot span {
+    width: 10px;
+    height: 10px;
+    margin: 5px 7px;
+    background: var(--bs-offwhite);
+    display: block;
+    -webkit-backface-visibility: visible;
+    transition: opacity 200ms ease;
+    border-radius: 30px;
+}
+.home-wrapper .international-school .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background: var(--bs-green);
+}
+.home-wrapper .download-section .banner-one,
+.home-wrapper .download-section .banner-two{
+    background-image: url("../images/banner-one.png");
+    background-size: cover;
+    overflow: hidden;
+    padding: 1.5rem;
+}
+.home-wrapper .download-section .banner-one .banner-one-image,
+.home-wrapper .download-section .banner-two .banner-two-image{
+    height: 400px;
+}
+.home-wrapper .download-section .banner-one .banner-one-image img,
+.home-wrapper .download-section .banner-two .banner-two-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.home-wrapper .download-section .banner-one .banner-one-text h1{
+    text-align: right;
+    color: var(--bs-green);
+}
+.home-wrapper .download-section .banner-one .banner-one-text p{
+    text-align: end;
+}
+.home-wrapper .download-section .banner-one .banner-one-text h1,
+.home-wrapper .download-section .banner-two .banner-two-text h1{
+    font-size: 2.75em;
+    margin-bottom: -10px;
+    font-weight: bold;
+}
+.home-wrapper .download-section .banner-two .banner-two-text h1{
+    color: #364280;
+}
+.home-wrapper .download-section .banner-one .banner-one-text .btn-news{
+    background-color: var(--bs-green);
+    color: var(--bs-white);
+}
+.home-wrapper .download-section .banner-two .banner-two-text .btn-prospectus{
+    background-color: #364280;
+    color: var(--bs-white);
+}
+.home-wrapper .download-section .owl-carousel .owl-nav.disabled, .owl-carousel .owl-dots.disabled {
+display: flow-root;
+}
+.home-wrapper .enrollment img{
+width: 100px;
+}
+.home-wrapper .enrollment h4{
+    font-family: Roboto-Bold;
+    color: var(--bs-green);
+}
+.home-wrapper .enrollment a{
+    font-family: Roboto-Bold;
+    /* font-weight: bold; */
+    color: var(--bs-red);
+    text-decoration: none;
+    font-size: 1.25rem;
+}
+
+/* .owl-carousel .owl-nav.disabled, .owl-carousel .owl-dots.disabled {
+    display: block;
+} */
+.prospectus-wrapper .pros-image{
+    height: 275px;
+    width: 100%;
+    object-fit: cover;
+}
+.w-22{
+    width: 22px !important;
+}
+.news-ticker{
+    width: 280px;
+    position: fixed;
+    right: 0;
+    top: 20px;
+    z-index: 2;
+}
+.news-ticker .nav-tabs {
+    border-bottom: none;
+}
+.news-ticker .nav-tabs .nav-link{
+    color: var(--bs-white);
+    background-color: var(--bs-green);
+    border-bottom-color: var(--bs-light-gold);
+    clip-path: polygon(
+        0% 0px, /* top left */
+        0px 0%, /* top left */
+        calc(100% - 10px) 0%, /* top right */
+        100% 45px, /* top right */
+        100% calc(100% - 0px), /* bottom right */
+        calc(100% - 20px) 100%, /* bottom right */
+        20px 100%, /* bottom left */
+        0 calc(100% - 0px) /* bottom left */
+    );
+    padding: 0.5rem 1.5rem;
+    font-size: .75rem;
+}
+.news-ticker .nav-tabs .nav-link.active {
+    color: var(--bs-white);
+    background-color: var(--bs-success);
+    border-bottom-color: var(--bs-light-gold);
+}
+.news-ticker .tab-content{
+    background-color: rgba(0,0,0,0.5);
+    border: 2px solid var(--bs-light-gold);
+}
+.new-ticker-toggle{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: translate(-25px, 0);
+    cursor: pointer;
+}
+@media screen and (max-width:1200px) {
+    .home-wrapper .download-section .banner-one .banner-one-text h1,
+    .home-wrapper .download-section .banner-two .banner-two-text h1 {
+        font-size: 1.75rem;
+        margin-bottom: 0;
+        text-align: center;
+    }
+    .home-wrapper .download-section .banner-one .banner-one-text p,
+    .home-wrapper .download-section .banner-two .banner-two-text p{
+        text-align: end;
+    }
+}
+@media screen and (max-width:992px) {
+    .home-wrapper .group-image {
+        position: absolute;
+        top: 60px;
+        left: -20px;
+        transform: translate(0px,0px);
+    }
+    .home-wrapper .video-section iframe{
+        width: 100%;
+        height:100%;
+    }
+    .contact-wrapper .contact-form input{
+        box-shadow: none;
+        border: none;
+        width: 100%!important;
+     }
+    /* .home-wrapper .chemical-counter .chemical-text .ucs-counter img{
+        width: 60px;
+    }
+    .home-wrapper .chemical-counter .chemical-text .ucs-counter .counter-num ,
+    .home-wrapper .chemical-counter .chemical-text .ucs-counter .counter-num-one ,
+    .home-wrapper .chemical-counter .chemical-text .ucs-counter .counter-num-two ,
+    .home-wrapper .chemical-counter .chemical-text .ucs-counter .counter-text
+    {
+       color: white;
+       font-size: 1.0rem;
+    } */
+}
+
+@media screen and (max-width:768px){
+    .home-wrapper .group-image {
+        position: absolute;
+        top: 60px;
+        left: 0px;
+        transform: translate(0px,0px);
+    }
+    /* .home-wrapper .chemical-counter .chemical-text .ucs-counter img{
+        width: 35px;
+    }
+    .home-wrapper .chemical-counter .chemical-text .ucs-counter .counter-num ,
+    .home-wrapper .chemical-counter .chemical-text .ucs-counter .counter-num-one ,
+    .home-wrapper .chemical-counter .chemical-text .ucs-counter .counter-num-two ,
+    .home-wrapper .chemical-counter .chemical-text .ucs-counter .counter-text
+    {
+       color: white;
+       font-size: 0.75rem;
+    } */
+    .overlay-ucs .cambridge-portion {
+        position: absolute;
+        top: 8%;
+        left: 30%;
+        transform: translate(-30%, -10%);
+        z-index: 1;
+    }
+    .overlay-ucs .cambridge-portion .girl-image img {
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-10%,25%);
+        width: 400px;
+    }
+    .overlay-ucs .cambridge-portion p{
+        font-family: Roboto;
+        color: var(--bs-white);
+        font-size: 1.10rem;
+    }
+
+}
+@media screen and (min-width:270px) and (max-width:576px){
+    /* .home-wrapper .chemical-counter .chemical-text .ucs-counter img{
+        width: 35px;
+    }
+    .home-wrapper .chemical-counter .chemical-text .ucs-counter .counter-num ,
+    .home-wrapper .chemical-counter .chemical-text .ucs-counter .counter-num-one ,
+    .home-wrapper .chemical-counter .chemical-text .ucs-counter .counter-num-two ,
+    .home-wrapper .chemical-counter .chemical-text .ucs-counter .counter-text
+    {
+       color: white;
+       font-size: 0.45rem;
+    } */
+    .overlay-ucs .cambridge-portion {
+        position: absolute;
+        top: 15%;
+        left: 30%;
+        transform: translate(-30%, -15%);
+        z-index: 1;
+    }
+    .overlay-ucs .cambridge-portion p{
+        font-family: Roboto;
+        color: var(--bs-white);
+        font-size: 1.0rem;
+    }
+    .overlay-ucs .cambridge-portion .girl-image img {
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-10%,25%);
+    }
+    .sticky-wrapper .navbar .navbar-nav .dropdown .dropdown-menu{
+        columns: 1;
+        background-color: var(--bs-green);
+        }
+}
+/* ........................................... */
+/* About Us style */
+
+
+.about-wrapper .about-us{
+    font-family: Roboto-Bold;
+    color: var(--bs-green);
+}
+.about-wrapper .about-para p{
+    font-family: Roboto;
+    color: var(--bs-black);
+    text-align: justify;
+    font-size: 1.25rem;
+}
+.about-wrapper .about-para ul li{
+    font-family: Roboto;
+    color: var(--bs-black);
+    text-align: justify;
+    font-size: 1.25rem;
+}
+.about-wrapper .accordion-flush .accordion-item .accordion-header button{
+    box-shadow: none;
+    color: var(--bs-black);
+    font-family: Roboto-Bold;
+    font-size: 1.25rem;
+}
+.about-wrapper .accordion-flush .accordion-item .accordion-header button:focus{
+    border-color: var(--bs-green);
+}
+.about-wrapper .accordion-flush .accordion-item .accordion-header .accordion-button:not(.collapsed){
+    background-color: var(--bs-green);
+    color:var(--bs-white);
+}
+.about-wrapper .accordion-flush .accordion-item .accordion-header .accordion-button:not(.collapsed)::after{
+    background-image: none;
+    content: "-";
+}
+
+.about-wrapper .accordion-flush .accordion-item .accordion-header .accordion-button::after{
+    background-image: none;
+    content: "+";
+}
+.about-wrapper .accordion-flush .accordion-item .accordion-body ul{
+    list-style-type: circle;
+    margin-left: 10px;
+}
+.about-wrapper .accordion-flush .accordion-item .accordion-body ul li{
+   font-family: Roboto;
+   font-size: 1.25rem;
+}
+.about-wrapper .accordion-flush .accordion-item .accordion-body ul li a{
+    font-family: Roboto;
+    font-size: 1.10rem;
+    text-decoration: none;
+    color: var(--bs-black);
+ }
+ .about-wrapper .accordion-flush .accordion-item .accordion-body ul li a:focus{
+    color: var(--bs-green);
+ }
+ .about-wrapper .about-signup{
+    background-color: var(--bs-about-signup);
+
+ }
+ .about-wrapper .about-signup p{
+    font-family: Roboto;
+    font-size: 1.25rem;
+    color: var(--bs-green);
+ }
+ .about-wrapper .about-signup label{
+    color: var(--bs-green);
+    font-family: Roboto;
+    font-size: 1.25rem;
+ }
+ .about-wrapper .about-signup input{
+    box-shadow: none;
+    border: none;
+ }
+ .about-wrapper .about-signup button{
+    width: 100%;
+    background-color: var(--bs-green);
+    color: var(--bs-white);
+    font-family: Roboto-Bold;
+    font-size: 1.25rem;
+    box-shadow: none;
+    border:none;
+ }
+ .about-wrapper .about-signup button:focus{
+    box-shadow: none;
+    border:none;
+ }
+
+.about-wrapper .enrollment img{
+width: 100px;
+}
+.about-wrapper .enrollment h4{
+    font-family: Roboto-Bold;
+    color: var(--bs-green);
+}
+.about-wrapper .enrollment a{
+    font-family: Roboto-Bold;
+    color: var(--bs-red);
+    text-decoration: none;
+    font-size: 1.25rem;
+}
+
+/* ............................. */
+
+/* Admission Page Style */
+.admission-wrapper .admission-head{
+    font-family: Roboto-Bold;
+    color: var(--bs-green);
+}
+.admission-wrapper p{
+    font-family: Roboto;
+    color: var(--bs-black);
+    font-size:1.25rem
+}
+.admission-wrapper .phase-one{
+    font-family: Roboto-Bold;
+    color: var(--bs-green);
+}
+.admission-wrapper .phase-one-para{
+    font-family: Roboto;
+    color: var(--bs-black);
+    font-size:1.25rem;
+    text-align:justify
+}
+.admission-wrapper .phase-points{
+    list-style-type: none;
+    list-style-image: url('images/ucs_logo_list.svg');
+}
+.admission-wrapper .phase-points li{
+    font-family: Roboto;
+    color: var(--bs-black);
+    font-size:1.25rem;
+    text-align:justify;
+}
+.admission-wrapper .phase-two{
+    font-family: Roboto-Bold;
+    color: var(--bs-green);
+}
+.admission-wrapper .phase-points-two .info-point{
+    list-style-type: none;
+}
+.admission-wrapper .phase-points-two li{
+    font-family: Roboto;
+    color: var(--bs-black);
+    font-size:1.25rem;
+    text-align:justify;
+}
+.admission-wrapper .enrollment img{
+    width: 100px;
+}
+.admission-wrapper .enrollment h4{
+    font-family: Roboto-Bold;
+    color: var(--bs-green);
+}
+.admission-wrapper .enrollment a{
+    font-family: Roboto-Bold;
+    color: var(--bs-red);
+    text-decoration: none;
+    font-size: 1.25rem;
+}
+
+.admission-wrapper .accordion-flush .accordion-item .accordion-header button{
+    box-shadow: none;
+    color: var(--bs-black);
+    font-family: Roboto-Bold;
+    font-size: 1.25rem;
+}
+.admission-wrapper .accordion-flush .accordion-item .accordion-header button:focus{
+    border-color: var(--bs-green);
+}
+.admission-wrapper .accordion-flush .accordion-item .accordion-header .accordion-button:not(.collapsed){
+    background-color: var(--bs-green);
+    color:var(--bs-white);
+}
+.admission-wrapper .accordion-flush .accordion-item .accordion-header .accordion-button:not(.collapsed)::after{
+    background-image: none;
+    content: "-";
+}
+
+.admission-wrapper .accordion-flush .accordion-item .accordion-header .accordion-button::after{
+    background-image: none;
+    content: "+";
+}
+.admission-wrapper .accordion-flush .accordion-item .accordion-body ul{
+    list-style-type: circle;
+    margin-left: 10px;
+}
+.admission-wrapper .accordion-flush .accordion-item .accordion-body ul li{
+   font-family: Roboto;
+   font-size: 1.25rem;
+}
+.admission-wrapper .accordion-flush .accordion-item .accordion-body ul li a{
+    font-family: Roboto;
+    font-size: 1.10rem;
+    text-decoration: none;
+    color: var(--bs-black);
+    /* border-bottom: 0.5px solid var(--bs-black) ;
+    border-width: 100%; */
+ }
+ .admission-wrapper .accordion-flush .accordion-item .accordion-body ul li a:focus{
+    color: var(--bs-green);
+ }
+ .admission-wrapper .about-signup{
+    background-color: var(--bs-about-signup);
+
+ }
+ .admission-wrapper .about-signup p{
+    font-family: Roboto;
+    font-size: 1.25rem;
+    color: var(--bs-green);
+ }
+ .admission-wrapper .about-signup label{
+    color: var(--bs-green);
+    font-family: Roboto;
+    font-size: 1.25rem;
+ }
+ .admission-wrapper .about-signup input{
+    box-shadow: none;
+    border: none;
+ }
+ .admission-wrapper .about-signup button{
+    width: 100%;
+    background-color: var(--bs-green);
+    color: var(--bs-white);
+    font-family: Roboto-Bold;
+    font-size: 1.25rem;
+    box-shadow: none;
+    border:none;
+ }
+ .admission-wrapper .about-signup button:focus{
+    box-shadow: none;
+    border:none;
+ }
+.admission-wrapper .accordion-flush .accordion-item > * ,
+.about-wrapper .accordion-flush .accordion-item > *{
+    border: 1px solid #18a166;
+}
+
+ /* Contact Page Style */
+
+ .contact-wrapper{
+    position: relative;
+    background:linear-gradient(0deg, rgba(24,161,102, 0.3), rgba(24,161,102, 0.3)), url(../images/camb-two-one.jpg);
+    /* background-image: url('images/camb-two-one.jpg') ; */
+    background-color: #18a166;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    object-fit: cover;
+ }
+
+ .contact-wrapper .contact-form .contact-form-title{
+    color: var(--bs-black);
+    font-family: Roboto-Bold;
+    font-size: 1.25rem;
+ }
+ .contact-wrapper .contact-head{
+    font-family: Roboto-Bold;
+    color: var(--bs-white);
+ }
+
+ .contact-wrapper  .contact-form input{
+    box-shadow: none;
+    border: none;
+ }
+ .contact-wrapper  .contact-form  textarea{
+    box-shadow: none;
+    border: none;
+ }
+ .contact-wrapper .contact-form .send-btn{
+    background-color: var(--bs-white);
+    width: 50%;
+    color:var(--bs-green);
+    font-family: Roboto-Bold;
+    font-size: 1.25rem;
+    box-shadow: none;
+    border: none;
+ }
+ .overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #063c3f;
+    opacity: 0.35;
+    z-index: 1;
+ }
+
+
+
+/* News & Events Blade Style */
+
+.top-banner {
+    position: relative;
+    text-align: center;
+    color: #fff;
+  }
+.top-banner .back-camb{
+    background:linear-gradient(0deg, rgba(24,161,102, 0.3), rgba(24,161,102, 0.3));
+}
+  .top-banner .perfect-left {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    transform: translate(-10%, -40%);
+  }
+  .top-banner .perfect-left h1{
+    font-family: Roboto-Bold;
+    font-size: 4rem;
+    color:var(--bs-white);
+  }
+  .top-banner .perfect-left h2 span{
+    font-family: Roboto-Bold;
+    font-size: 3rem;
+    color:var(--bs-white);
+  }
+  .top-banner .perfect-left span{
+    float: left;
+  }
+
+
+  .recent-post{
+    border: 1px solid var(--bs-green)
+  }
+  .recent-post .bg-colr {
+    border-bottom: 3px solid var(--red);
+    background-color: #EDEDED;
+  }
+  .recent-post .card {
+    border: none;
+  }
+  .recent-post-card img {
+    width: 100%;
+    height: 80px;
+    object-fit: cover;
+  }
+  .recent-post .bg-colr{
+    background-color: var(--bs-green);
+  }
+  .recent-post .bg-colr h6 ,
+  .recent-post .card-body a {
+    font-family:Roboto-Bold;
+    text-decoration: none;
+    color: var(--bs-white);
+    font-size: 1.25rem;
+  }
+
+  .recent-post .card-body h6 {
+    line-height: 1.6;
+    font-family: Roboto-Bold;
+    text-decoration: none;
+  }
+  .recent-post .card .card-text {
+    font-family: Roboto-Bold;
+    font-size: 0.8rem;
+    justify-content: space-between;
+  }
+  .recent-post .yearly-tags {
+    border-bottom: 1px solid var(--red);
+  }
+  .recent-post .yearly-tags a {
+    font-size: 1.25rem;
+    font-family:  Roboto-Bold;
+    text-decoration: none;
+    color: var(--dark);
+
+  }
+  .recent-post .yearly-tag .anchor-tag{
+    background-color: var(--bs-green);
+    color: var(--bs-white);
+  }
+
+
+   /* news letter new design   */
+.news-letter-wrapper .text-area p {
+  font-family: Roboto;
+  font-size: 1.25rem;
+  text-align: justify;
+}
+.news-letter-wrapper h1 {
+  font-family: Roboto-Bold;
+}
+.news-letter-news .main-card img {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  /* border-radius: 10px; */
+}
+.news-letter-news .card{
+    border: 1px solid var(--bs-green);
+}
+.news-letter-news .main-card
+{
+  position: relative;
+  padding-top: 50%;
+  width: 100%;
+}
+.news-letter-news .main-card h3{
+    font-family: Roboto-Bold;
+}
+.news-letter-news .text-adjust-card p {
+  font-family: Roboto-Bold;
+  text-align:  justify;
+  font-size: 1.25rem;
+}
+.news-letter-news .text-adjust-card .card-title{
+    font-family:  Roboto-Bold;
+}
+.news-letter-news .text-adjust-card .press-button{
+    background-color: var(--bs-green);
+    color: var(--bs-white);
+    font-family:  Roboto-Bold;
+}
+/* news */
+.news-letter-card .news-card .name-of-news {
+  position: absolute;
+  top: 0;
+  background: rgba(195, 33, 42, 0.8);
+  width: 100%;
+  color: var(--white);
+}
+.news-letter-card .news-card .download-btn {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: var(--red);
+  clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+}
+.news-letter-card .news-card .download-btn a {
+  color: var(--white);
+  text-decoration: none;
+  font-family: Roboto-Bold;
+  font-size: 1.25rem;
+  float: right;
+}
+
+.back-camb-overlay{
+    background: var(--bs-green);
+    overflow: hidden;
+}
+.back-camb-overlay .back-camb{
+    object-fit:cover;
+    opacity: 0.4;
+    width: 100%;
+    height: 500px;
+}
+
+
+/* All News & Events */
+.news-or-events-wrapper .news-explore .form-filters{
+    /* border: 1px solid  var(--bs-green); */
+}
+.news-or-events-wrapper .news-explore .form-filters .filter-button button{
+    background-color: var(--bs-green);
+    box-shadow: none;
+    border: none;
+    font-family: Roboto-Bold;
+    font-size: 1.25rem;
+}
+.news-or-events-wrapper .news-explore .form-filters .form-control{
+    font-family: Roboto-Bold;
+    box-shadow: none;
+    border: 1px solid var(--bs-green);
+    font-size: 1.25rem;
+}
+.news-or-events-wrapper .news-explore .form-filters .form-control option{
+    background-color: var(--bs-green);
+    color: var(--bs-white);
+
+}
+.news-or-events-wrapper .news-explore .form-filters .form-control option:hover{
+    background-color: black;
+    color: var(--bs-white);
+
+}
+
+
+/* News & Events Detail */
+.press-release-detail-wrapper .event-details{
+    font-family: Roboto-Bold;
+}
+.press-release-detail-wrapper .headings h1{
+    font-family: Roboto-Bold;
+}
+.press-release-detail-wrapper .headings p{
+    font-family: Roboto;
+    font-size: 1.25rem;
+}
+.press-release-detail-wrapper .press-detail .press-thumbnail {
+    border: 1px solid var(--bs-green);
+}
+.press-release-detail-wrapper  .press-release-slide h4{
+    font-family: Roboto-Bold;
+}
+.press-release-detail-wrapper  .press-release-slide .owl-carousel .item .testimonials img{
+    height: 300px;
+    object-fit: cover;
+}
+.press-release-detail-wrapper .event-box{
+border-bottom: 1px solid var(--bs-green);
+}
+/* .press-release-detail-wrapper{
+    background-image: url("images/camb-two-one.jpg");
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat, repeat;
+    object-fit: cover;
+} */
+
+/* Pagination Style */
+.page-item.active .page-link{
+    background-color: #18a166;
+    border-color: #18a166;
+    box-shadow: none;
+}
+.page-link {
+    color: black;
+}
+
+
+
+.about-wrapper .News ul li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 90px;
+    /* border-bottom: 1px solid #eee; */
+    list-style: none;
+}
+.about-wrapper .News {
+    background-color: white;
+    border: 1px solid  var(--bs-green);
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.about-wrapper .News  .widget-title{
+    font-family: Roboto-Bold;
+    color: var(--bs-green);
+}
+.about-wrapper .News ul li a{
+    font-size:1.25rem;
+    color: #000;
+    margin-bottom: 10px;
+    font-weight: 600;
+    display: inline-block;
+    text-decoration: none!important;
+}
+.about-wrapper .News ul li a img{
+    width: 100px;
+    height: 50px;
+    object-fit: cover;
+    cursor: pointer;
+}
+.about-wrapper .News ul li span{
+    display: block;
+    font-size: 1.0rem;
+    line-height: 1.5;
+    font-family: Roboto-Bold;
+}
+.about-wrapper .News ul li span:hover{
+   color: var(--bs-green);
+}
+.about-wrapper .News ul li p{
+    display: block;
+    font-size: 1.0rem;
+    line-height: 1.5;
+    font-family: Roboto-Bold;
+}

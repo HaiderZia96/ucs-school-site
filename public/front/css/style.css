@@ -1,0 +1,26 @@
+:root{
+    --white: #FFFFFF;
+    --black: #333333;
+    --red:#F44336;
+    --cyan:#00BCD4;
+    --green:#2b982b;
+    --yellow:#ff9600 ;
+}
+body{
+    background-color: var(--cyan);
+}
+a,a:hover{
+    text-decoration: none;
+}
+.bg-yellow{
+    background-color: var(--yellow);
+    color: var(--white);
+}
+.text-warning,
+.text-warning:hover{
+    color: var(--yellow) !important;
+}
+.btn-success{
+    background-color: var(--green) !important;
+    color: var(--white) !important;
+}

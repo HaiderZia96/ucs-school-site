@@ -1,0 +1,375 @@
+@font-face {
+  font-family: 'icomoonb';
+  src:  url('../fonts/icomoonb.eot');
+  src:  url('../fonts/icomoonb.eot') format('embedded-opentype'),
+    url('../fonts/icomoonb.ttf') format('truetype'),
+    url('../fonts/icomoonb.woff') format('woff'),
+    url('../fonts/icomoonb.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot');
+  src:  url('../fonts/icomoon.eot') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf') format('truetype'),
+    url('../fonts/icomoon.woff') format('woff'),
+    url('../fonts/icomoon.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+@font-face {
+  font-family: 'icomoona';
+  src:  url('../fonts/icomoona.eot');
+  src:  url('../fonts/icomoona.eot') format('embedded-opentype'),
+    url('../fonts/icomoona.ttf') format('truetype'),
+    url('../fonts/icomoona.woff') format('woff'),
+    url('../fonts/icomoona.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-achivements:before {
+  content: "\e900";
+}
+.icon-building:before {
+  content: "\e901";
+}
+.icon-commas:before {
+  content: "\e902";
+}
+.icon-graduate:before {
+  content: "\e903";
+}
+.icon-lms:before {
+  content: "\e904";
+}
+.icon-location:before {
+  content: "\e905";
+}
+.icon-post-graduate:before {
+  content: "\e906";
+}
+.icon-research-network:before {
+  content: "\e907";
+}
+.icon-symbol .path1:before {
+  content: "\e908";
+  color: rgb(205, 114, 19);
+}
+.icon-symbol .path2:before {
+  content: "\e909";
+  margin-left: -1.0029296875em;
+  color: rgb(239, 181, 9);
+}
+.icon-symbol .path3:before {
+  content: "\e909";
+  margin-left: -1.0999296875em;
+  color: rgb(239, 181, 9);
+}
+.icon-under-graduate:before {
+  content: "\e90a";
+}
+.icon-Library-Icon:before {
+  content: "\e90b";
+  font-family: 'icomoonb';
+}
+
+/* new design icons family icomoonh  */
+.icon-advice:before {
+  content: "\10ffff";
+  font-family: 'icomoona';
+}
+.icon-ambassador:before {
+  content: "\e9014";
+  font-family: 'icomoona';
+}
+.icon-Asset-7:before {
+  content: "\e9029";
+}
+.icon-Asset-10:before {
+  content: "\e9039";
+}
+.icon-Asset-11:before {
+  content: "\e9049";
+}
+.icon-Asset-12:before {
+  content: "\e9059";
+  font-family: 'icomoona';
+}
+.icon-back-bg .path1:before {
+  content: "\e9031";
+  font-family: 'icomoona';
+  color: rgb(195, 33, 42);
+}
+.icon-back-bg .path2:before {
+  content: "\e9032";
+  font-family: 'icomoona';
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-broucher:before {
+  content: "\e9089";
+  font-family: 'icomoona';
+}
+.icon-calander:before {
+  content: "\e9099";
+  font-family: 'icomoona';
+}
+.icon-climate:before {
+  content: "\e90a1";
+  font-family: 'icomoona';
+}
+.icon-clock:before {
+  content: "\e90b1";
+  font-family: 'icomoona';
+}
+.icon-confrence:before {
+  content: "\e90c0";
+  font-family: 'icomoona';
+}
+.icon-controller-exam:before {
+  content: "\e90d1";
+  font-family: 'icomoona';
+}
+.icon-correct:before {
+  content: "\e90e1";
+  font-family: 'icomoona';
+}
+.icon-covid:before {
+  content: "\e90f1";
+  font-family: 'icomoona';
+}
+.icon-education:before {
+  content: "\e9101";
+  font-family: 'icomoona';
+}
+.icon-emplyoment:before {
+  content: "\e9111";
+  font-family: 'icomoona';
+}
+.icon-equality:before {
+  content: "\e9121";
+  font-family: 'icomoona';
+}
+.icon-feedback:before {
+  content: "\e9131";
+  font-family: 'icomoona';
+}
+.icon-fm:before {
+  content: "\e9141";
+  font-family: 'icomoona';
+}
+.icon-graduate-direct:before {
+  content: "\e9151";
+  font-family: 'icomoona';
+}
+.icon-housing:before {
+  content: "\e9162";
+  font-family: 'icomoona';
+}
+.icon-journals:before {
+  content: "\e9174";
+  font-family: 'icomoona';
+}
+.icon-learning-resource:before {
+  content: "\e9182";
+  font-family: 'icomoona';
+}
+.icon-media-publication:before {
+  content: "\e9194";
+  font-family: 'icomoona';
+}
+.icon-network-operation:before {
+  content: "\e91a4";
+  font-family: 'icomoona';
+}
+.icon-news-letter:before {
+  content: "\e91b4";
+  font-family: 'icomoona';
+}
+.icon-play:before {
+  content: "\e91c4";
+  font-family: 'icomoona';
+}
+.icon-registarar:before {
+  content: "\e91d4";
+  font-family: 'icomoona';
+}
+.icon-student-afair:before {
+  content: "\e91e4";
+  font-family: 'icomoona';
+}
+.icon-student-assistance:before {
+  content: "\e91fd";
+  font-family: 'icomoona';
+}
+.icon-student-career:before {
+  content: "\e9207";
+  font-family: 'icomoona';
+}
+.icon-student-dicipline:before {
+  content: "\e9217";
+  font-family: 'icomoona';
+}
+.icon-student-exchange:before {
+  content: "\e922a";
+  font-family: 'icomoona';
+}
+.icon-student-recruitment:before {
+  content: "\e923";
+  font-family: 'icomoona';
+}
+.icon-student-scholarships:before {
+  content: "\e924";
+  font-family: 'icomoona';
+}
+.icon-student-soc-cap:before {
+  content: "\e925a";
+  color: #c3212a;
+  font-family: 'icomoona';
+}
+.icon-treasurer:before {
+  content: "\e926a";
+  color: #c6252b;
+  font-family: 'icomoona';
+}
+.icon-wifi:before {
+  content: "\e927a";
+  color: #c3212a;
+  font-family: 'icomoona';
+}
+.icon-next-link:before {
+  content: "\e900a";
+  color: #c3212a;
+  font-family: 'icomoona';
+}
+.icon-achivement:before {
+  content: "\e600a";
+  color: #fff;
+  font-family: 'icomoona';
+}
+.icon-administrate:before {
+  content: "\e601a";
+  font-family: 'icomoona';
+}
+.icon-auditorium:before {
+  content: "\e602a";
+  font-family: 'icomoona';
+}
+.icon-bank:before {
+  content: "\e603a";
+  font-family: 'icomoona';
+}
+.icon-bullet:before {
+  content: "\e604a";
+  color: #c3212a;
+  font-family: 'icomoona';
+}
+.icon-bullets-light:before {
+  content: "\e605a";
+  color: #c3212a;
+  font-family: 'icomoona';
+}
+.icon-cafeteria:before {
+  content: "\e606a";
+  font-family: 'icomoona';
+}
+.icon-e-library:before {
+  content: "\e607a";
+  font-family: 'icomoona';
+}
+.icon-gym:before {
+  content: "\e608a";
+  font-family: 'icomoona';
+}
+.icon-health:before {
+  content: "\e609a";
+  font-family: 'icomoona';
+}
+.icon-hostel:before {
+  content: "\e60aa";
+  font-family: 'icomoona';
+}
+.icon-labs:before {
+  content: "\e60ba";
+  font-family: 'icomoona';
+}
+.icon-lecture-hall:before {
+  content: "\e60ca";
+  font-family: 'icomoona';
+}
+.icon-library:before {
+  content: "\e60da";
+  font-family: 'icomoona';
+}
+.icon-music:before {
+  content: "\e60ea";
+  font-family: 'icomoona';
+}
+.icon-online-learning:before {
+  content: "\e60fa";
+  font-family: 'icomoona';
+}
+.icon-prayer-room:before {
+  content: "\e610a";
+  font-family: 'icomoona';
+}
+.icon-program:before {
+  content: "\e611a";
+  color: #fff;
+  font-family: 'icomoona';
+}
+.icon-research:before {
+  content: "\e612a";
+  color: #fff;
+  font-family: 'icomoona';
+}
+.icon-scholarship:before {
+  content: "\e613a";
+  color: #fff;
+  font-family: 'icomoona';
+}
+.icon-security:before {
+  content: "\e614a";
+  font-family: 'icomoona';
+}
+.icon-sports:before {
+  content: "\e615a";
+  font-family: 'icomoona';
+}
+.icon-stationary:before {
+  content: "\e616a";
+  font-family: 'icomoona';
+}
+.icon-student-affair:before {
+  content: "\e617a";
+  font-family: 'icomoona';
+}
+.icon-student-society:before {
+  content: "\e618a";
+  font-family: 'icomoona';
+}
+.icon-women-room:before {
+  content: "\e619a";
+  font-family: 'icomoona';
+}
